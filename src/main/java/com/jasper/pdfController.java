@@ -1,26 +1,16 @@
 package com.jasper;
 
-import java.io.InputStream;
-import java.util.HashMap;
-import java.util.Map;
-import javax.servlet.http.HttpServletResponse;
-
+import net.sf.jasperreports.engine.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import net.sf.jasperreports.engine.JRDataSource;
-import net.sf.jasperreports.engine.JREmptyDataSource;
-import net.sf.jasperreports.engine.JasperCompileManager;
-import net.sf.jasperreports.engine.JasperExportManager;
-import net.sf.jasperreports.engine.JasperFillManager;
-import net.sf.jasperreports.engine.JasperPrint;
-import net.sf.jasperreports.engine.JasperReport;
+import javax.servlet.http.HttpServletResponse;
+import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 public class pdfController {
@@ -30,7 +20,7 @@ public class pdfController {
     	
 	@GetMapping(path = "pdf/{jrxml}")
 	@ResponseBody
-    public void getPdf(@PathVariable String jrxml ,HttpServletResponse response) throws Exception {
+    public void getPdf(@PathVariable String jrxml , HttpServletResponse response, @RequestParam String name, @RequestParam String documentNumber, @RequestParam String dateTime) throws Exception {
 		//Get JRXML template from resources folder
 		Resource resource = context.getResource("classpath:jasperreports/"+jrxml+".jrxml");
         //Compile to jasperReport
@@ -38,7 +28,14 @@ public class pdfController {
         JasperReport report=JasperCompileManager.compileReport(inputStream);		
 		//Parameters Set
         Map<String, Object> params = new HashMap<>();
-        
+        params.put("name", name);
+        params.put("documentNumber", documentNumber);
+        params.put("year", dateTime.substring(0, 3));
+        params.put("month", dateTime.substring(3, 5));
+        params.put("date", dateTime.substring(5, 7));
+        params.put("hour", dateTime.substring(7, 9));
+        params.put("minute", dateTime.substring(9, 11));
+
         //Data source Set
         JRDataSource dataSource = new JREmptyDataSource();
         //Make jasperPrint
