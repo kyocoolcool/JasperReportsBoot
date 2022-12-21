@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<!-- Created with Jaspersoft Studio version 8.1.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a2c04335-78c2-4792-a326-03543f140358">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<parameter name="name" class="java.lang.String">
@@ -17,31 +17,10 @@
 	<background>
 		<band splitType="Stretch"/>
 	</background>
-	<title>
-		<band height="74" splitType="Stretch">
+	<detail>
+		<band height="802">
 			<staticText>
-				<reportElement x="56" y="19" width="475" height="30" uuid="922ebc94-263d-4043-b325-537c4c095f08">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-				</reportElement>
-				<textElement>
-					<font fontName="kaiu" size="19" isBold="true"/>
-				</textElement>
-				<text><![CDATA[內政部移民署告知簡任（或相當簡任）第11職等以上]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="85" y="45" width="390" height="20" uuid="9aef9da3-ebf8-4bd9-a565-dd27ece0d26a"/>
-				<textElement>
-					<font fontName="kaiu" size="19" isBold="true"/>
-				</textElement>
-				<text><![CDATA[未涉密之公務員未經許可進入大陸地區通知單
-]]></text>
-			</staticText>
-		</band>
-	</title>
-	<pageHeader>
-		<band height="90" splitType="Stretch">
-			<staticText>
-				<reportElement x="29" y="25" width="129" height="20" uuid="22ecb866-0679-4150-a1cf-673f23b6f722">
+				<reportElement x="15" y="138" width="129" height="20" uuid="22ecb866-0679-4150-a1cf-673f23b6f722">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -51,7 +30,7 @@
 				<text><![CDATA[被告知人姓名：]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="29" y="45" width="100" height="20" uuid="23e9c84e-3ec0-4fca-adfb-ad4079b3ff33"/>
+				<reportElement x="15" y="171" width="100" height="20" uuid="23e9c84e-3ec0-4fca-adfb-ad4079b3ff33"/>
 				<textElement>
 					<font fontName="kaiu" size="14"/>
 				</textElement>
@@ -59,7 +38,7 @@
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" x="29" y="65" width="100" height="20" uuid="854e5eaf-b9e2-4f15-a813-21359ada6cf3"/>
+				<reportElement positionType="Float" x="15" y="203" width="100" height="20" uuid="854e5eaf-b9e2-4f15-a813-21359ada6cf3"/>
 				<textElement>
 					<font fontName="kaiu" size="14"/>
 				</textElement>
@@ -67,21 +46,21 @@
 ]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="138" y="25" width="100" height="20" uuid="b1f219fd-df5c-46bd-bd4a-d3d36a2fafa2"/>
+				<reportElement x="116" y="138" width="80" height="20" uuid="b1f219fd-df5c-46bd-bd4a-d3d36a2fafa2"/>
 				<textElement>
 					<font fontName="kaiu" size="14"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="125" y="45" width="100" height="20" uuid="09180a41-3f64-4efb-80d9-e4f9fdea3b70"/>
+				<reportElement x="105" y="171" width="118" height="20" uuid="09180a41-3f64-4efb-80d9-e4f9fdea3b70"/>
 				<textElement>
 					<font fontName="kaiu" size="14"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{documentNumber}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="140" y="66" width="14" height="17" uuid="86cb95b0-446d-4d83-b6c7-554e660d26a4">
+				<reportElement x="125" y="204" width="14" height="17" uuid="86cb95b0-446d-4d83-b6c7-554e660d26a4">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
@@ -91,7 +70,7 @@
 				<text><![CDATA[年]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="179" y="66" width="14" height="17" uuid="a1a40504-d325-42cb-87e3-71ed0b4fd53e">
+				<reportElement x="164" y="204" width="14" height="17" uuid="a1a40504-d325-42cb-87e3-71ed0b4fd53e">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
@@ -101,7 +80,7 @@
 				<text><![CDATA[月]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="218" y="66" width="14" height="17" uuid="5245545c-d388-46d1-9e5e-54ad3ae7dfd5">
+				<reportElement x="203" y="204" width="14" height="17" uuid="5245545c-d388-46d1-9e5e-54ad3ae7dfd5">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
@@ -110,7 +89,7 @@
 				<text><![CDATA[日]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="257" y="66" width="14" height="17" uuid="ee3eab4a-63c0-42f2-b9aa-701d6a282258">
+				<reportElement x="244" y="204" width="14" height="17" uuid="ee3eab4a-63c0-42f2-b9aa-701d6a282258">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
@@ -119,7 +98,7 @@
 				<text><![CDATA[時]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="298" y="66" width="14" height="17" uuid="304de57a-21a3-46ae-a5f1-9541d2f7d159">
+				<reportElement x="283" y="204" width="14" height="17" uuid="304de57a-21a3-46ae-a5f1-9541d2f7d159">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
@@ -128,91 +107,211 @@
 				<text><![CDATA[分]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="110" y="66" width="38" height="19" uuid="a0496af9-8fb9-491f-9bd0-b4ad70304422"/>
+				<reportElement x="95" y="204" width="27" height="19" uuid="a0496af9-8fb9-491f-9bd0-b4ad70304422"/>
 				<textElement>
 					<font fontName="kaiu" size="14"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{year}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="160" y="66" width="23" height="19" uuid="568840c3-8337-46db-934b-f7412b0c6e56"/>
+				<reportElement x="145" y="204" width="23" height="19" uuid="568840c3-8337-46db-934b-f7412b0c6e56"/>
 				<textElement>
 					<font fontName="kaiu" size="14"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{month}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="198" y="66" width="23" height="19" uuid="36723771-9c83-4372-b266-f7f65e3b68fb"/>
+				<reportElement x="183" y="204" width="23" height="19" uuid="36723771-9c83-4372-b266-f7f65e3b68fb"/>
 				<textElement>
 					<font fontName="kaiu" size="14"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="237" y="66" width="23" height="19" uuid="bae58cb5-4215-4fa3-a44f-83678f780260"/>
+				<reportElement x="222" y="204" width="23" height="19" uuid="bae58cb5-4215-4fa3-a44f-83678f780260"/>
 				<textElement>
 					<font fontName="kaiu" size="14"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{hour}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="277" y="66" width="23" height="19" uuid="545e0b30-24e3-446a-b68e-6086bb5f4e7b"/>
+				<reportElement x="262" y="204" width="23" height="19" uuid="545e0b30-24e3-446a-b68e-6086bb5f4e7b"/>
 				<textElement>
 					<font fontName="kaiu" size="14"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{minute}]]></textFieldExpression>
 			</textField>
-		</band>
-	</pageHeader>
-	<columnHeader>
-		<band height="130" splitType="Stretch">
 			<staticText>
-				<reportElement x="28" y="23" width="510" height="62" uuid="41381911-cddf-4221-b048-6066510ea0b9"/>
-				<textElement rotation="None">
-					<font fontName="kaiu" size="14" isUnderline="false"/>
+				<reportElement x="15" y="154" width="141" height="19" uuid="980f1c0f-83b8-4050-86fb-ff32726394b9">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="11" isBold="false"/>
 				</textElement>
-				<text><![CDATA[    台瑞進入大陸地區，依臺灣地區與大陸地區人民關係條例第９條第３項、
-第９１條第２項及臺灣地區公務員及特定身分人員進入大陸地區許可辦法第４
-條第１項規定略以，未涉及國家安全、利益或機密之簡任（或相當簡任）第１１
-職等以上之公務員，應向內政部申請許可，始得進入大陸地區；違反者，]]></text>
+				<text><![CDATA[Name of person notified]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="476" y="65" width="42" height="23" uuid="127288fc-048f-4a26-b516-6ef3f865d6ba"/>
-				<textElement>
-					<font fontName="kaiu" size="14" isUnderline="true"/>
+				<reportElement x="15" y="186" width="141" height="19" uuid="02ae1116-aa4b-4967-8610-80387b80a166">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="11" isBold="false"/>
 				</textElement>
-				<text><![CDATA[可處]]></text>
+				<text><![CDATA[ID number]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="29" y="79" width="251" height="23" uuid="4180e497-1bbb-4874-b241-1ce1e9804d89"/>
-				<textElement>
-					<font fontName="kaiu" size="14" isUnderline="true"/>
+				<reportElement x="15" y="221" width="272" height="19" uuid="393c9322-0e5a-4436-82ce-8f854488a6da">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="11" isBold="false"/>
 				</textElement>
-				<text><![CDATA[新臺幣２萬元以上１０萬元以下罰鍰。]]></text>
+				<text><![CDATA[Time of notification: (Year/Month/Day/Time)]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="96" y="94" width="370" height="30" uuid="5987108c-00cd-478c-8400-46f3094ac65c"/>
+				<reportElement x="35" y="477" width="370" height="19" uuid="5987108c-00cd-478c-8400-46f3094ac65c"/>
 				<textElement>
 					<font fontName="kaiu" size="14"/>
 				</textElement>
 				<text><![CDATA[如對赴陸管制期間仍有疑義，請逕向服務機關（構）查詢。]]></text>
 			</staticText>
-		</band>
-	</columnHeader>
-	<summary>
-		<band height="500" splitType="Stretch">
 			<staticText>
-				<reportElement x="19" y="50" width="480" height="43" uuid="5be1ff90-8aef-4ea8-a477-0e1ae4edbbc4"/>
-				<textElement>
-					<font fontName="kaiu" size="12"/>
+				<reportElement x="16" y="503" width="520" height="32" uuid="8c71d12d-25a3-47c6-8672-66db1e6600d6">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="11" isBold="false" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[　臺灣地區公務員，國家安全局、國防部、法務部調查局及其所屬各級機關未具公務員身
-　分之人員，應向內政部申請許可，始得進入大陸地區。但簡任第１０職等及警監四階以下
-　未涉及國家安全、利益或機密之公務員及警察人員赴大陸地區，不在此限。
+				<text><![CDATA[      If you are still in doubt as to the time period for control on going to the Mainland Area, please contact your service agency or institution. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="547" width="100" height="18" uuid="96f97ea4-ffe7-497c-a4ec-a7b61288e22a"/>
+				<textElement>
+					<font fontName="kaiu" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[法源依據：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="547" width="16" height="19" uuid="1e6a6c60-c742-457b-a348-981753cedb7c"/>
+				<textElement>
+					<font fontName="kaiu" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[＊]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="566" width="16" height="19" uuid="36070546-f18d-43c6-a5b8-d6da19320320"/>
+				<textElement>
+					<font fontName="kaiu" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[＊]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="567" width="100" height="18" uuid="2130a6e1-ace3-47aa-ad51-4aa7b4cc1f04"/>
+				<textElement>
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Legal basis:
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="18" y="300" width="140" height="30" uuid="45967b14-c1e1-4a09-8cb3-22e11bf4ba29">
+				<reportElement x="27" y="585" width="270" height="19" uuid="ee2eb6aa-30d5-4b5e-b66e-02ea3bd27fb6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="kaiu" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[臺灣地區與大陸地區人民關係條例第9條第3項：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="604" width="509" height="29" uuid="16d7f666-39fa-4b80-b370-d16b48c29423">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Article 9 Paragraph 3 of the Act Governing Relations Between the People of the Taiwan Area and the Mainland Area :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="633" width="469" height="43" uuid="5be1ff90-8aef-4ea8-a477-0e1ae4edbbc4"/>
+				<textElement>
+					<font fontName="kaiu" size="12"/>
+				</textElement>
+				<text><![CDATA[臺灣地區公務員，國家安全局、國防部、法務部調查局及其所屬各級機關未具公務員身
+分之人員，應向內政部申請許可，始得進入大陸地區。但簡任第１０職等及警監四階以下
+未涉及國家安全、利益或機密之公務員及警察人員赴大陸地區，不在此限。
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="677" width="522" height="90" uuid="27bf02af-4100-4a2d-b843-3f54a7177e9a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Civil servants and non-civil servant personnel of the National Security Bureau, Ministry of National Defense, Bureau of Investigation under the Ministry of Justice, and their subordinate agencies at all levels shall not enter the Mainland Area unless permitted by the Ministry of the Interior. However, civil servants of Grade 10 Selected Appointment Rank or lower and police and prison officers of Grade 4 ranking and below, whose duties and responsibilities do not involve national security, or interests or confidential matters, are not subject to such requirement. 
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="767" width="299" height="16" uuid="813ca850-3af9-44d2-94f0-96d1b9240c74"/>
+				<textElement>
+					<font fontName="kaiu" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[臺灣地區與大陸地區人民關係條例第９１條第２項：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="63" y="-6" width="475" height="30" uuid="922ebc94-263d-4043-b325-537c4c095f08">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="kaiu" size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[內政部移民署告知簡任（或相當簡任）第11職等以上]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="87" y="21" width="393" height="30" uuid="1fca1ad9-8e8d-4774-93a0-ed1afea098ec">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="kaiu" size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[未涉密之公務員未經許可進入大陸地區通知單]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="50" width="550" height="63" uuid="a13a3c53-6e64-4fb5-99cd-01a351e704b8">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Notice to Civil Servants of Grade 11 Selected Appointment Rank or Higher Whose Duties
+and Responsibilities Do Not Involve Confidentiality, on Entering the Mainland Arer
+Without Permission
+National Immigration Agency, Ministry of the Interior]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="8" y="250" width="528" height="80" uuid="a8565491-663d-483d-a8b7-0d321ac03368"/>
+				<textElement markup="styled">
+					<font fontName="kaiu" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["    台端進入大陸地區，依臺灣地區與大陸地區人民關係條例第9條第3項、第91條第2項及臺灣地區公務員及特定身分人員進入大陸地區許可辦法第4條第1項規定略以，未涉及國家安全、利益或機密之簡任(或相當簡任)第11職等以上之公務員，應向內政部申請許可，始得進入大陸地區；違反者，"+"<style isUnderline=\"true\">可處新臺幣2萬元以上10萬元以下罰鍰</style>"+"。"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="8" y="332" width="519" height="110" uuid="befcfe60-a489-41df-825b-5f88ee565b03"/>
+				<textElement markup="styled">
+					<font fontName="SansSerif" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["      This is to inform you that, under the provisions of Article 9 Paragraph 3 and Article 91 Paragraph 2 of the Act Governing Relations Between the People of the Taiwan Area and the Mainland Area, and Article 4 Paragraph 1 of the Regulations on Permission for Civil Servants and Persons with Specified Status of the Taiwan Area to Enter the Mainland Area, civil servants of Grade 11 Selected Appointment Rank or higher whose duties do not involve national security, interests or confidential matters, shall not enter the Mainland Area unless permitted by the Ministry of the Interior. Any person who violates this requirement "+"<style isUnderline=\"true\">may be punished with an administrative fine of between NT$20,000 and NT$100,000</style>"+"."]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="802">
+			<staticText>
+				<reportElement x="12" y="533" width="140" height="30" uuid="45967b14-c1e1-4a09-8cb3-22e11bf4ba29">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -223,7 +322,7 @@
 				<text><![CDATA[被告知人簽名：]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="18" y="350" width="160" height="30" uuid="30601b20-741f-4056-be71-4ef5288d9d5e">
+				<reportElement x="11" y="598" width="160" height="30" uuid="30601b20-741f-4056-be71-4ef5288d9d5e">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
@@ -233,125 +332,155 @@
 				</textElement>
 				<text><![CDATA[簽收日期及時間：]]></text>
 			</staticText>
-			<line>
-				<reportElement x="147" y="320" width="225" height="1" uuid="584240d7-7953-419a-8cff-338a191ff5bd">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-				</reportElement>
-			</line>
 			<staticText>
-				<reportElement x="227" y="408" width="196" height="21" uuid="3bfa4b90-37cf-4f39-9738-369bd9878e04"/>
+				<reportElement x="27" y="60" width="500" height="16" uuid="309ba806-c03f-4df0-8c1e-0c8ec6f1e2c4"/>
 				<textElement>
-					<font fontName="kaiu" size="18"/>
+					<font fontName="kaiu" size="12"/>
 				</textElement>
-				<text><![CDATA[國境事務大隊 (戳章) :]]></text>
+				<text><![CDATA[違反第9條第3項，處新臺幣2萬元以上10萬元以下罰鍰。]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="187" y="440" width="252" height="47" uuid="0a1737c0-afab-46f1-86e7-195da589d27a"/>
-				<textElement>
-					<font fontName="kaiu" size="40"/>
-				</textElement>
-				<text><![CDATA[內政部移民署]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="16" y="17" width="100" height="24" uuid="96f97ea4-ffe7-497c-a4ec-a7b61288e22a"/>
+				<reportElement x="27" y="268" width="94" height="24" uuid="ebefa763-e286-41a0-a25f-6fa9f8964f72"/>
 				<textElement>
 					<font fontName="kaiu" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[＊法源依據：]]></text>
+				<text><![CDATA[申請方式：]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="-11" y="36" width="341" height="15" uuid="ee2eb6aa-30d5-4b5e-b66e-02ea3bd27fb6">
+				<reportElement x="27" y="30" width="520" height="32" uuid="ef7a3830-87ed-4409-8582-9189566f6dea">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Article 91 Paragraph 2 of the Act Governing Relations Between the People of the Taiwan Area and the Mainland Area :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="76" width="520" height="32" uuid="9d54e892-7c1e-4e84-864e-e78c47f17fcd">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Any person who violates the provisions of Article 9 Paragraph 3 shall be punished with an administrative fine of not less than twenty thousand but not more than one hundred thousand New Taiwan dollars.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="120" width="500" height="16" uuid="f414ffd1-5715-4df1-9061-33611fb01771"/>
+				<textElement>
+					<font fontName="kaiu" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[臺灣地區公務員及特定身分人員進入大陸地區許可辦法第4條第1項：
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="137" width="520" height="32" uuid="9b304d28-8c73-4486-8d61-3f76c6465188">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="10" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Article 4 Paragraph 1 of the Regulations on Permission for Civil Servants and Persons with Specified Status of the Taiwan Area to Enter the Mainland Area :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="163" width="500" height="30" uuid="ccc55efd-4e9e-476a-944e-8e5a249812e3"/>
+				<textElement>
+					<font fontName="kaiu" size="12"/>
+				</textElement>
+				<text><![CDATA[未涉及國家安全、利益或機密之簡任（或相當簡任）第11職等以上之公務員、警監三階以上之警察人員及前條第3項第1款人員，應經主管機關許可後，始得進入大陸地區。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="193" width="520" height="50" uuid="cd152f02-edcf-4734-9c89-422e2d478b56">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Civil servants of Grade 11 Selected Appointment Rank (or equivalent) or higher, police and prison officers of Grade 3 ranking or higher, and persons specified in Paragraph 3 Subparagraph 1 of the preceding Article, whose duties and responsibilities do not involve national security, or interests or confidential matters, shall not enter the Mainland Area unless permitted by the competent authority.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="268" width="16" height="19" uuid="9ba93f72-f02f-4dee-9163-b6098020c0df"/>
+				<textElement>
+					<font fontName="kaiu" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[＊]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="27" y="368" width="94" height="24" uuid="d05d6edc-7e49-4373-947f-5f57b9eeb3d1"/>
+				<textElement>
+					<font fontName="kaiu" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[How to apply : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="368" width="16" height="19" uuid="f08d3d39-4732-4062-bed2-7afc47fc45ad"/>
+				<textElement>
+					<font fontName="kaiu" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[＊]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="557" width="207" height="30" uuid="433b67b2-9b70-4509-ae8d-567ad6f56c01">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="kaiu" size="12" isBold="true"/>
+					<font fontName="SansSerif" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[       臺灣地區與大陸地區人民關係法條例第９條第３項：]]></text>
+				<text><![CDATA[Notified person’s signature]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="31" y="89" width="299" height="16" uuid="813ca850-3af9-44d2-94f0-96d1b9240c74"/>
+				<reportElement x="12" y="622" width="207" height="30" uuid="8da64621-38b0-4581-9d9d-d77c61364b67">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
 				<textElement>
-					<font fontName="kaiu" size="12" isBold="true"/>
+					<font fontName="SansSerif" size="14" isBold="true"/>
 				</textElement>
-				<text><![CDATA[臺灣地區與大陸地區人民關係條例第９１條第２項：]]></text>
+				<text><![CDATA[Date and time of receipt]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="31" y="105" width="500" height="16" uuid="309ba806-c03f-4df0-8c1e-0c8ec6f1e2c4"/>
+				<reportElement x="152" y="673" width="253" height="50" uuid="86e4f198-df9e-4d4a-b673-5c26bfb40a77">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
 				<textElement>
+					<font fontName="kaiu" size="40" isBold="true"/>
+				</textElement>
+				<text><![CDATA[內政部移民署]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="32" y="725" width="504" height="30" uuid="1b0cd3cb-9b28-433e-8c7b-2ed103c31ecd">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[National Immigration Agency, Ministry of the Interior]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="24" y="287" width="519" height="73" uuid="3b5a43de-1d2b-4a68-a743-a5e4484608c8"/>
+				<textElement markup="styled">
 					<font fontName="kaiu" size="12"/>
 				</textElement>
-				<text><![CDATA[違反第９條第３項，處新臺幣２萬元以上10萬元以下罰鍰。]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="31" y="122" width="392" height="16" uuid="a2ce483c-757b-477e-888e-f3f1e599e2a8"/>
-				<textElement>
-					<font fontName="kaiu" size="12" isBold="true"/>
+				<textFieldExpression><![CDATA["申請人詳填「政務人員、直轄市長、涉及國家安全、利益或機密人員（含上開三類退離職人員）、縣（市）長或簡任(或相當簡任)第十一職等以上公務員進入大陸地區申請表」及檢附必要佐證資料，由服務機關(構)審核事由並附註意見，於"+"<style isUnderline=\"true\">進入大陸地區當日之2個工作日前</style>"+"，於「公務人員赴陸許可線上申請系統」申請。相關申請須知請參閱本署全球資訊網。"
+]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="27" y="389" width="519" height="110" uuid="aa85058a-2f67-4c8d-86db-f9d4f63a9ba4"/>
+				<textElement markup="styled">
+					<font fontName="SansSerif" size="10"/>
 				</textElement>
-				<text><![CDATA[臺灣地區公務員及特定身分人員進入大陸地區許可辦法第４條第１項：
-]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="31" y="137" width="459" height="32" uuid="329e0377-3f63-4c69-aa5e-242a415b60c5"/>
-				<textElement>
-					<font fontName="kaiu" size="12"/>
-				</textElement>
-				<text><![CDATA[未涉及國家安全、利益或機密之簡任（或相當簡任）第11職等以上之公務員、警階三階以上之警察人員及前條第３項第１款人員，應經主管機關許可後，始得進入大陸地區。
-]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="16" y="179" width="94" height="24" uuid="ebefa763-e286-41a0-a25f-6fa9f8964f72"/>
-				<textElement>
-					<font fontName="kaiu" size="14" isBold="true"/>
-				</textElement>
-				<text><![CDATA[＊申請方式：]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="31" y="196" width="486" height="28" uuid="7b628b27-0cfb-4d75-954d-9c634bdf2117"/>
-				<textElement>
-					<font fontName="kaiu" size="12"/>
-				</textElement>
-				<text><![CDATA[開三類退離職人員）、縣（市）長或簡任（或相當簡任）第十一職等以上公務員進入大陸地區申請表」及檢附必要佐證資料，由服務機關（構）審核事由並附註意見，於]]></text>
-			</staticText>
-			<line>
-				<reportElement x="165" y="370" width="225" height="1" uuid="7ceff8b6-a363-4da9-a810-6bf7488cdf7e"/>
-			</line>
-			<staticText>
-				<reportElement x="439" y="208" width="70" height="23" uuid="e2900ea6-3367-47f6-995c-e7d486db1367"/>
-				<textElement>
-					<font fontName="kaiu" size="13" isUnderline="true"/>
-				</textElement>
-				<text><![CDATA[進入大陸地]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="30" y="222" width="130" height="23" uuid="6d1b9f87-ab3b-4fdd-94a5-29ea3a3fd822"/>
-				<textElement>
-					<font fontName="kaiu" size="12" isUnderline="true"/>
-				</textElement>
-				<text><![CDATA[區當日之２個工作日前]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="151" y="222" width="382" height="20" uuid="f3d60b4d-a190-4c7c-9d56-d22b2261bbbd"/>
-				<textElement>
-					<font fontName="kaiu" size="12"/>
-				</textElement>
-				<text><![CDATA[，於「公務員赴陸許可線上申請系統」申請。相關申請須知請參閱]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="30" y="236" width="118" height="17" uuid="68e005f1-c569-42c6-96ea-5dcc855fd0bf"/>
-				<textElement>
-					<font fontName="kaiu" size="12"/>
-				</textElement>
-				<text><![CDATA[本署全球資訊網。
-]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="79" y="180" width="454" height="19" uuid="19052e8f-8aef-4971-a963-bc4fbea89f4f"/>
-				<textElement>
-					<font fontName="kaiu" size="12"/>
-				</textElement>
-				<text><![CDATA[    申請人詳填「政務人員、直轄市長、涉及國家安全、利益或機密人員（含上]]></text>
-			</staticText>
+				<textFieldExpression><![CDATA["The applicant must fill out details in the “Application Form for Current and Retired Political Appointees, Special Municipality Mayors, and Persons Whose Duties and Responsibilities Involve National Security or Interests or Confidential Matters, and for Current County/City Mayors and Civil Servants of Grade 11 Selected Appointment Rank and Higher, to Enter the Mainland Area”, provide the requisite supporting information, and with the reason for the application reviewed and approved and an opinion appended by the applicant’s service agency/institution, and apply via the “Online Application System for Permission for Civil Servants to Enter the Mainland Area. ” Applications shall be submitted "+"<style isUnderline=\"true\">two working days before the date of entry to the Mainland Area</style>"+". Please refer to the NIA’s global information website for related application information."]]></textFieldExpression>
+			</textField>
 		</band>
-	</summary>
+	</detail>
 </jasperReport>
